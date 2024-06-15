@@ -3,20 +3,20 @@
 using namespace std;
 
 int myAdditionFunction(int a, int b);
+
 int askUser1();
+
 int askUser2();
+
 void printRespond(int first, int second);
+
+void askAndAddUserNumber();
 
 
 
 int main() 
 {
-
-	int firstRespond = askUser1();
-	int secondRespond = askUser2();
-
-	printRespond(firstRespond, secondRespond);
-
+	askAndAddUserNumber();
 
 	return 0;
 }
@@ -62,6 +62,15 @@ void printRespond(int first, int second)
 {
 	cout << "The addition of both your numbers: " << myAdditionFunction(first, second) << endl;
 	
+}
+
+void askAndAddUserNumber()
+{
+
+	int firstRespond = askUser1();
+	int secondRespond = askUser2();
+
+	printRespond(firstRespond, secondRespond);
 }
 
 
